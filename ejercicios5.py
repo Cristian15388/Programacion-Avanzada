@@ -23,14 +23,14 @@ def validar_y_obtener_datos():
     return {"nombre": nombre, "edad": edad, "correo": correo}
 
 def main():
-    # Lista para almacenar la informacion
+    
     lista_datos = []
 
-    # Obtener datos validos
+    
     datos = validar_y_obtener_datos()
     lista_datos.append(datos)
 
-    # Mostrar la lista
+    
     print("Informacion almacenada:")
     print(lista_datos)
 
