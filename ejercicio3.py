@@ -1,5 +1,5 @@
 def main():
-    # Ingresar dos numeros enteros por teclado
+    
     try:
         num1 = int(input("Ingrese el numero de inicio para la serie Fibonacci: "))
         num2 = int(input("Ingrese el numero de iteraciones (terminos): "))
@@ -7,12 +7,12 @@ def main():
         print("Error: Debe ingresar numeros enteros validos.")
         return
 
-    # Si el limite (num2) es negativo, error
+    
     if num2 < 0:
         print("Error: El limite no puede ser negativo.")
         return
 
-    # Generar la serie Fibonacci starting from num1 (asumiendo secuencia como  num1 como F1=F2, o con previo 0)
+
     serie = []
     if num2 > 0:
         serie.append(num1)
@@ -23,7 +23,7 @@ def main():
             b = c
             serie.append(c)
 
-    # Mostrar resultados
+    
     print(f"La lista completa generada: {serie}")
     print(f"Cuantos terminos se generaron: {len(serie)}")
     if serie:
