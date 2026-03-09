@@ -1,5 +1,5 @@
 def main():
-    # Lista de estudiantes (estructuras como diccionarios)
+    
     estudiantes = [
         {
             "nombre": "Juan Perez",
@@ -18,7 +18,7 @@ def main():
     ]
 
     for estudiante in estudiantes:
-        # Validaciones
+        
         if len(estudiante["materias"]) < 3:
             print(f"Error para {estudiante['nombre']}: Debe tener al menos 3 materias.")
             continue
@@ -27,14 +27,14 @@ def main():
                 print(f"Error para {estudiante['nombre']}: Nota invalida en {materia} ({nota}).")
                 continue
 
-        # Calculos
+        
         notas = estudiante["notas"]
         promedio = sum(notas.values()) / len(notas)
         mejor_materia = max(notas, key=notas.get)
         peor_materia = min(notas, key=notas.get)
         aprueba = promedio >= 3.0
 
-        # Mostrar resultados
+        
         print(f"Estudiante: {estudiante['nombre']}")
         print(f"Promedio general: {promedio:.2f}")
         print(f"Materia con mejor nota: {mejor_materia} ({notas[mejor_materia]})")
